@@ -1,0 +1,48 @@
+.card__header{
+    /* padding: 45px; */
+    margin: 30px;
+    height: 100%;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var( --very-dark-blackish-blue);
+}
+
+.card__header-head{
+    display: flex;
+    align-items: center;
+}
+
+
+.card__header-head img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.card__header-head-name{
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.card__header-head p#name{
+    font-weight: var(--font-weight600);
+    font-size: 15px;
+    line-height: 15px;
+}
+.tag{
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+.card__header h2{
+    margin: 20px 0;
+}
+
+.card__header p{
+    line-height: 20px;
+}
+
+.paragraph{
+    color: hsla(219, 29%, 14%, 0.7);
+}

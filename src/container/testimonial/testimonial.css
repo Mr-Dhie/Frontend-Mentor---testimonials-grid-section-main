@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* ### Primary */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+
+    /* ### Font */
+    --font-size: 13px;
+    --font-family: "Barlow Semi Condensed", sans-serif;
+    --font-weight500: 500;
+    --font-weight600: 600
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial__container{
+    display: grid;
+    grid-template-columns: 3fr  1fr;
+    margin: 0 255px;
+    box-sizing: border-box;
+}
+
+.testimonial__container-first{
+    margin-right: 30px;
+}
+
+.testimonial__container-first-child1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 30px;
+}
+
+.testimonial__container-first-child2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.radius{
+    background-color: var(--white);
+    border-radius: 15px;
+}
+.margin-right{
+    margin-right: 30px;
+}
+
+.violet{
+    background-color: var(--moderate-violet);
+
+}
+#qoute{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+    width: auto;
+    height: 125px;
+}
+
+.grey{
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.dark{
+    background-color: var(--very-dark-blackish-blue);
+}
+
+
+@media screen and (max-width: 1700px) {
+    .testimonial__container{
+        margin: 0 200px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .testimonial__container{
+        margin: 0 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .testimonial__container{
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .testimonial__container{
+        margin: 0 50px;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .testimonial__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .testimonial__container-second{
+        margin-top: 30px;
+    }
+
+    .testimonial__container-first{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial__container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .testimonial__container-first-child1{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .testimonial__container-first-child2{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .margin-right{
+        margin: 0;
+    }
+    .radius{
+        border-radius: 0;
+    }
+    .testimonial__container-second{
+        margin: 0;
+    }
+    .testimonial__container{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #qoute{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #qoute{
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #qoute{
+        height: 70px;;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #qoute{
+        display: none;
+    }
+}
